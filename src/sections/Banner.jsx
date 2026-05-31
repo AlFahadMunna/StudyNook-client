@@ -14,7 +14,7 @@ const HeroBanner = () => {
       {/* Background Gradient Pattern */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-accent/20 blur-[120px]" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-blue-500/10 blur-[120px]" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-purple-500/10 blur-[120px]" />
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03] dark:opacity-[0.05]" />
       </div>
 
@@ -41,7 +41,7 @@ const HeroBanner = () => {
 
             <h1 className="text-5xl lg:text-7xl font-black leading-[1.1] mb-6 text-foreground">
               Find Your Perfect <br />
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-blue-400">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-accent to-purple-400">
                 Study Room
               </span>
             </h1>
