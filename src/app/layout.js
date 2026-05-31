@@ -3,6 +3,9 @@ import "./globals.css";
 import Navbar from "../components/shared/Navbar";
 import { Toaster } from "react-hot-toast";
 
+import Footer from "../components/shared/Footer";
+import ThemeProviders from "../Providers/ThemeProviders";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,9 +30,12 @@ export default function RootLayout({ children }) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Toaster></Toaster>
+        <ThemeProviders>
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+          <Toaster></Toaster>
+        </ThemeProviders>
       </body>
     </html>
   );
