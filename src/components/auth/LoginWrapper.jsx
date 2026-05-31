@@ -164,7 +164,7 @@ const LoginWrapper = () => {
                 variant="bordered"
                 className="w-full h-12 border-border hover:bg-default text-foreground font-medium rounded-[var(--radius)]"
               >
-                <FaGoogle className="text-blue-500" />
+                <FaGoogle className="text-purple-500" />
                 Continue with Google
               </Button>
             </div>

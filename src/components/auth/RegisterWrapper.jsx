@@ -191,7 +191,7 @@ const RegisterWrapper = () => {
                 variant="bordered"
                 className="w-full h-12 border-border hover:bg-default text-foreground font-medium rounded-md"
               >
-                <FaGoogle className="text-blue-500" />
+                <FaGoogle className="text-purple-500" />
                 Sign Up with Google
               </Button>
             </div>
