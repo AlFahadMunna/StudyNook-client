@@ -1,7 +1,20 @@
-import Image from "next/image";
-
-export default function Home() {
+import { getFeauturedRooms } from "../lib/data/data";
+import HeroBanner from "../sections/Banner";
+import Features from "./../sections/Features";
+import Workflow from "./../sections/Workflow";
+import FeaturedRoom from "./../sections/FeaturedRoom";
+export const metadata = {
+  title: "Home - StudyNook",
+};
+export default async function Home() {
+  const feautredRooms = await getFeauturedRooms();
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black"></div>
+    <div>
+      <HeroBanner></HeroBanner>
+
+      <FeaturedRoom feautredRooms={feautredRooms}></FeaturedRoom>
+      <Features></Features>
+      <Workflow></Workflow>
+    </div>
   );
 }
