@@ -12,8 +12,6 @@ import {
 import { BiX } from "react-icons/bi";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
-import toast from "react-hot-toast";
-import { getAllRooms } from "../../lib/data/data";
 import { useRouter, useSearchParams } from "next/navigation";
 
 const RoomActionSidebar = () => {

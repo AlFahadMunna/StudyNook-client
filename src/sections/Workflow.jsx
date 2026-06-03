@@ -92,7 +92,7 @@ const Workflow = () => {
             {
               quote:
                 "StudyNook changed how I prep for finals. I book it, show up, and get straight to work.",
-              author: "Adil Rahman",
+              author: "fahad Rahman",
               role: "CSE Student",
               icon: <FaUserGraduate />,
             },

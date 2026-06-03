@@ -23,11 +23,3 @@ export const getRoomsById = async (id) => {
   const data = await res.json();
   return data.data;
 };
-
-// get user data
-
-// export const getUserById = async (id) => {
-//   const res = await fetch(process.env.NEXT_PUBLIC_URL + "/users/" + id);
-//   const data = await res.json();
-//   return data.data;
-// };

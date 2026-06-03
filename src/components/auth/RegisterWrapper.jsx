@@ -100,10 +100,7 @@ const RegisterWrapper = () => {
                 }
               >
                 <Label className="text-sm font-semibold mb-1">Full Name</Label>
-                <Input
-                  placeholder="Abdur Rahman"
-                  className="bg-field-background"
-                />
+                <Input placeholder="Al Fahad" className="bg-field-background" />
                 <FieldError className="text-danger text-xs mt-1" />
               </TextField>
 
@@ -119,7 +116,7 @@ const RegisterWrapper = () => {
               >
                 <Label className="text-sm font-semibold mb-1">Email</Label>
                 <Input
-                  placeholder="adil@example.com"
+                  placeholder="fahad@example.com"
                   className="bg-field-background"
                 />
                 <FieldError className="text-danger text-xs mt-1" />

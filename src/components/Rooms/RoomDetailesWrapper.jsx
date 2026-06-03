@@ -185,14 +185,14 @@ const RoomDetailesWrapper = ({ room }) => {
                         alt={room?.userName}
                         src={room?.userImage || room?.imageUrl}
                       />
-                      <Avatar.Fallback>{initial || "Adil"}</Avatar.Fallback>
+                      <Avatar.Fallback>{initial || "fahad"}</Avatar.Fallback>
                     </Avatar>
                     <div className="space-y-0.5">
                       <h4 className="text-lg font-bold text-foreground leading-tight">
-                        {room?.userName || "Adil"}
+                        {room?.userName || "fahad"}
                       </h4>
                       <p className="text-xs text-muted font-medium">
-                        {room?.userEmail || "adil@gmail.com"}
+                        {room?.userEmail || "fahad@gmail.com"}
                       </p>
                     </div>
                   </div>

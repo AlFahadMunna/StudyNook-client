@@ -1,5 +1,5 @@
 import React from "react";
-import { getAllRooms } from "../../../lib/data/data";
+import { getAllRooms } from "../../../lib/data /data";
 import Wrapper from "../../../components/shared/Wrapper";
 import AllRoomsWrapper from "../../../sections/Rooms/AllRoomsWrapper";
 export const metadata = {

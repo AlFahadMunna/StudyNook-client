@@ -1,24 +1,25 @@
 import { betterAuth } from "better-auth";
-import { MongoClient } from "mongodb";
 import { mongodbAdapter } from "better-auth/adapters/mongodb";
 import { jwt } from "better-auth/plugins";
+import clientPromise from "./mongodb";
 
-const client = new MongoClient(process.env.MONGODB_URI);
+const client = await clientPromise;
 const db = client.db("study-nook");
 
 export const auth = betterAuth({
-  database: mongodbAdapter(db, {
-    client,
-  }),
+  database: mongodbAdapter(db),
+
   emailAndPassword: {
     enabled: true,
   },
+
   socialProviders: {
     google: {
       clientId: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     },
   },
+
   session: {
     cookieCache: {
       enabled: true,
@@ -26,5 +27,6 @@ export const auth = betterAuth({
       maxAge: 7 * 24 * 60 * 60,
     },
   },
+
   plugins: [jwt()],
 });

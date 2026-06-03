@@ -106,7 +106,7 @@ const LoginWrapper = () => {
                 Email Address
               </Label>
               <Input
-                placeholder="adil@example.com"
+                placeholder="fahad@example.com"
                 className="bg-field-background text-field-foreground border-field-border focus:ring-2 ring-focus"
               />
               <FieldError className="text-danger text-xs mt-1" />
