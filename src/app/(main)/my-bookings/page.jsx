@@ -3,9 +3,6 @@ import { headers } from "next/headers";
 import { auth } from "../../../lib/auth/auth";
 
 import MyBookingComponent from "../../../components/Rooms/MyBookingComponent";
-// import { getBookingData } from "../../../lib/data/data";
-
-// get booking data
 
 const getBookingData = async () => {
   const { token } = await auth.api.getToken({

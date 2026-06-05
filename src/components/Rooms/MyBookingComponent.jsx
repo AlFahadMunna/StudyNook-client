@@ -4,7 +4,7 @@ import Wrapper from "../shared/Wrapper";
 import { motion } from "motion/react";
 import { Chip, Table, Button, Surface } from "@heroui/react";
 import Image from "next/image";
-import { CancelBooking } from "../modal/CancelBooking";
+import { CancelBooking } from "../modal /CancelBooking";
 import CustomEmpty from "../shared/CustomEmty";
 import { TbCalendarCancel } from "react-icons/tb";
 import Link from "next/link";
