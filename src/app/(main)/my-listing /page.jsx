@@ -1,12 +1,10 @@
 import React from "react";
-// import { getListingRooms } from "../../../lib/data/data";
 import MyListingSection from "../../../sections/Rooms/MyListingSection";
 import { auth } from "../../../lib/auth/auth";
 import { headers } from "next/headers";
 export const metadata = {
   title: "My Listing - StudyNook",
 };
-// get listing data by user id
 
 const getListingRooms = async () => {
   const { token } = await auth.api.getToken({

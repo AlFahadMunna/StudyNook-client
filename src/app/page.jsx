@@ -1,4 +1,4 @@
-import { getFeauturedRooms } from "../lib/data /data";
+import { getFeaturedRooms } from "../lib/data /data";
 import HeroBanner from "../sections/Banner";
 import Features from "./../sections/Features";
 import Workflow from "./../sections/Workflow";
@@ -7,7 +7,7 @@ export const metadata = {
   title: "Home - StudyNook",
 };
 export default async function Home() {
-  const feautredRooms = await getFeauturedRooms();
+  const feautredRooms = await getFeaturedRooms();
   return (
     <div>
       <HeroBanner></HeroBanner>

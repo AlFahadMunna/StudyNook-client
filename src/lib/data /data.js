@@ -10,7 +10,7 @@ export const getAllRooms = async (search, amenities, max, min) => {
   return data.data;
 };
 // featured
-export const getFeauturedRooms = async () => {
+export const getFeaturedRooms = async () => {
   const res = await fetch(process.env.NEXT_PUBLIC_URL + "/featured-rooms", {
     cache: "no-store",
   });

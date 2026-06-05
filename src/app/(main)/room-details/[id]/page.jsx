@@ -1,6 +1,5 @@
-import { getRoomsById, getUserById } from "../../../../lib/data/data";
+import { getRoomsById } from "../../../../lib/data /data";
 import RoomDetailsComponent from "../../../../components/Rooms/RoomDetailsComponent";
-
 export async function generateMetadata({ params }) {
   const { id } = await params;
 

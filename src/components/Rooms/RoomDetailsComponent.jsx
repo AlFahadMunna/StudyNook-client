@@ -9,11 +9,10 @@ import { FiArrowLeft, FiCalendar } from "react-icons/fi";
 import { BiDollar, BiEdit, BiTrash } from "react-icons/bi";
 import { LuLayers, LuUsers } from "react-icons/lu";
 import Wrapper from "../shared/Wrapper";
-import toast from "react-hot-toast";
 import { useSession } from "../../lib/auth/auth-client";
-import { EditRoom } from "../modal/EditRoom";
-import { DeleteRoom } from "./../modal/DeleteRoom";
-import { BookingModal } from "../modal/BookingModal";
+import { EditRoom } from "../modal /EditRoom";
+import { DeleteRoom } from "../modal /DeleteRoom";
+import { BookingModal } from "../modal /BookingModal";
 
 const RoomDetailsComponent = ({ room }) => {
   const { data: session } = useSession();
@@ -155,7 +154,7 @@ const RoomDetailsComponent = ({ room }) => {
                     <BookingModal user={user} room={room} />
                   ) : (
                     <Link
-                      href={"/logim"}
+                      href={"/login"}
                       className="flex items-center justify-center w-full h-14 bg-accent text-accent-foreground font-black text-base rounded-2xl shadow-lg shadow-accent/20 hover:opacity-95 active:scale-[0.98] transition-all"
                     >
                       Book This Space
