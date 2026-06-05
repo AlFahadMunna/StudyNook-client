@@ -1,5 +1,5 @@
 import React from "react";
-import AddRoomsSection from "../../../sections/Rooms/AddRoomsSection";
+import AddRoomsSection from "../../../sections/Rooms/AddRoomSection";
 
 export const metadata = {
   title: "Add Room - StudyNook",

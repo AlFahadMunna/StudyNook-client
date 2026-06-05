@@ -143,7 +143,9 @@ const AddRoomsSection = () => {
                 name="imageUrl"
                 type="text"
                 validate={(v) =>
-                  !/^(https?:\/\/.*\.(?:png|jpg|jpeg|webp|svg))/i.test(v)
+                  !/^https?:\/\/(images\.unsplash\.com|.*\.(png|jpg|jpeg|webp|svg))/i.test(
+                    v,
+                  )
                     ? "Please enter a valid image URL"
                     : null
                 }
