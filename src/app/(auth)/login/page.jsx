@@ -1,12 +1,12 @@
 import React from "react";
-import LoginWrapper from "../../../components/auth/LoginWrapper";
+import LoginForm from "../../../components/auth/LoginForm";
 export const metadata = {
   title: "Login - StudyNook ",
 };
 const Login = () => {
   return (
     <div>
-      <LoginWrapper></LoginWrapper>
+      <LoginForm></LoginForm>
     </div>
   );
 };

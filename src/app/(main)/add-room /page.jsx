@@ -1,5 +1,5 @@
 import React from "react";
-import AddRoomWrapper from "../../../sections/Rooms/AddRoomWrapper";
+import AddRoomsSection from "../../../sections/Rooms/AddRoomsSection";
 
 export const metadata = {
   title: "Add Room - StudyNook",
@@ -7,7 +7,7 @@ export const metadata = {
 const AddRoomPage = () => {
   return (
     <div>
-      <AddRoomWrapper></AddRoomWrapper>
+      <AddRoomsSection></AddRoomsSection>
     </div>
   );
 };

@@ -7,7 +7,7 @@ import Link from "next/link";
 import { BiPlus } from "react-icons/bi";
 import CustomEmpty from "../../components/shared/CustomEmty";
 import { MdPlaylistAddCheck } from "react-icons/md";
-const MyListingWrapper = ({ rooms }) => {
+const MyListingSection = ({ rooms }) => {
   return (
     <div>
       <Wrapper>
@@ -63,4 +63,4 @@ const MyListingWrapper = ({ rooms }) => {
   );
 };
 
-export default MyListingWrapper;
+export default MyListingSection;

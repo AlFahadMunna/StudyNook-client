@@ -2,7 +2,7 @@ import React from "react";
 import { headers } from "next/headers";
 import { auth } from "../../../lib/auth/auth";
 
-import MyBookingWrapper from "../../../components/Rooms/MyBookingWrapper";
+import MyBookingComponent from "../../../components/Rooms/MyBookingComponent";
 // import { getBookingData } from "../../../lib/data/data";
 
 // get booking data
@@ -39,7 +39,7 @@ const MyBookings = async () => {
 
   return (
     <div>
-      <MyBookingWrapper data={bookingData} />
+      <MyBookingComponent data={bookingData} />
     </div>
   );
 };

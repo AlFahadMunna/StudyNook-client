@@ -17,7 +17,7 @@ export async function proxy(request) {
     pathname.startsWith("/add-room") ||
     pathname.startsWith("/my-bookings") ||
     pathname.startsWith("/my-listing") ||
-    pathname.startsWith("/room-detailes");
+    pathname.startsWith("/room-details");
 
   if (user && isAuthPage) {
     return NextResponse.redirect(new URL("/", request.url));
@@ -31,7 +31,7 @@ export async function proxy(request) {
 }
 export const config = {
   matcher: [
-    "/room-detailes/:path*",
+    "/room-details/:path*",
     "/add-room",
     "/my-bookings",
     "/my-listing",

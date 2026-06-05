@@ -15,7 +15,7 @@ import { EditRoom } from "../modal/EditRoom";
 import { DeleteRoom } from "./../modal/DeleteRoom";
 import { BookingModal } from "../modal/BookingModal";
 
-const RoomDetailesWrapper = ({ room }) => {
+const RoomDetailsComponent = ({ room }) => {
   const { data: session } = useSession();
   const user = session?.user;
   const isOwner = user?.id === room.userId;
@@ -206,4 +206,4 @@ const RoomDetailesWrapper = ({ room }) => {
   );
 };
 
-export default RoomDetailesWrapper;
+export default RoomDetailsComponent;

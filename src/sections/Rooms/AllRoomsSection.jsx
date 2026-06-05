@@ -1,10 +1,10 @@
 "use client";
 import { motion } from "motion/react";
 import RoomCard from "../../components/Rooms/RoomCard";
-import RoomActionSidebar from "./../../components/Rooms/RoomActionSidebar";
+import RoomActionSidebar from "../../components/Rooms/RoomActionSidebar";
 import CustomEmpty from "../../components/shared/CustomEmty";
 import { LuSearchX } from "react-icons/lu";
-const AllRoomsWrapper = ({ allRooms }) => {
+const AllRoomsSection = ({ allRooms }) => {
   return (
     <div>
       {/* headers */}
@@ -48,4 +48,4 @@ const AllRoomsWrapper = ({ allRooms }) => {
   );
 };
 
-export default AllRoomsWrapper;
+export default AllRoomsSection;

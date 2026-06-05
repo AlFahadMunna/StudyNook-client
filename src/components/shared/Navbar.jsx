@@ -12,6 +12,7 @@ import { useRouter } from "next/navigation";
 import NavLink from "./NavLink";
 import { ThemeSwitch } from "../../hooks/useTheme";
 import { NavbarSkeleton } from "./NavbarSkeleton";
+import { GiBookAura } from "react-icons/gi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,7 +65,7 @@ const Navbar = () => {
       >
         <Link href="/" className="group flex items-center gap-3">
           <div className="relative flex items-center justify-center w-10 h-10 bg-accent rounded-xl shadow-lg group-hover:rotate-12 transition-transform duration-300">
-            <FaBookReader className="text-accent-foreground text-xl" />
+            <GiBookAura className="text-accent-foreground text-xl" />
           </div>
           <span className="text-xl font-bold tracking-tight text-foreground">
             StudyNook

@@ -1,5 +1,5 @@
 import { getRoomsById, getUserById } from "../../../../lib/data/data";
-import RoomDetailesWrapper from "./../../../../components/Rooms/RoomDetailesWrapper";
+import RoomDetailsComponent from "../../../../components/Rooms/RoomDetailsComponent";
 
 export async function generateMetadata({ params }) {
   const { id } = await params;
@@ -11,15 +11,15 @@ export async function generateMetadata({ params }) {
   };
 }
 
-const RoomDetailes = async ({ params }) => {
+const RoomDetails = async ({ params }) => {
   const { id } = await params;
   const room = await getRoomsById(id);
 
   return (
     <div>
-      <RoomDetailesWrapper room={room} />
+      <RoomDetailsComponent room={room} />
     </div>
   );
 };
 
-export default RoomDetailes;
+export default RoomDetails;

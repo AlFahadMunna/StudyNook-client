@@ -20,7 +20,7 @@ import { FaGoogle } from "react-icons/fa6";
 import { FiLoader, FiUserPlus } from "react-icons/fi";
 import { signInGoogle, authClient } from "../../lib/auth/auth-client";
 
-const RegisterWrapper = () => {
+const RegisterForm = () => {
   const router = useRouter();
   const [isPending, setIsPending] = useState(false);
 
@@ -209,4 +209,4 @@ const RegisterWrapper = () => {
   );
 };
 
-export default RegisterWrapper;
+export default RegisterForm;

@@ -18,7 +18,7 @@ import { useRouter } from "next/navigation";
 import Wrapper from "../../components/shared/Wrapper";
 import { authClient, useSession } from "../../lib/auth/auth-client";
 
-const AddRoomWrapper = () => {
+const AddRoomsSection = () => {
   const [isPending, setIsPending] = useState(false);
   const [selectedAmenities, setSelectedAmenities] = useState([]);
   const { data: session } = useSession();
@@ -259,4 +259,4 @@ const AddRoomWrapper = () => {
   );
 };
 
-export default AddRoomWrapper;
+export default AddRoomsSection;

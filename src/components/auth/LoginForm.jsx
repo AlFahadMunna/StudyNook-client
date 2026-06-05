@@ -21,7 +21,7 @@ import { FiLoader } from "react-icons/fi";
 import { HiOutlineLogin } from "react-icons/hi";
 import { authClient, signInGoogle } from "../../lib/auth/auth-client";
 
-const LoginWrapper = () => {
+const LoginForm = () => {
   const router = useRouter();
   const [isPending, setIsPending] = useState(false);
 
@@ -186,4 +186,4 @@ const LoginWrapper = () => {
   );
 };
 
-export default LoginWrapper;
+export default LoginForm;

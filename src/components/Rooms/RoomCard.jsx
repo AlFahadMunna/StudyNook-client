@@ -91,7 +91,7 @@ const RoomCard = ({ room }) => {
         </div>
 
         <div className="pt-2 mt-auto">
-          <Link href={`/room-detailes/${room._id}`}>
+          <Link href={`/room-details/${room._id}`}>
             <Button className="w-full h-11 bg-accent text-accent-foreground font-bold rounded-xl shadow-md hover:opacity-90 active:scale-[0.98] transition-all">
               View Details
             </Button>

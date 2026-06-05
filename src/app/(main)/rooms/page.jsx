@@ -1,7 +1,7 @@
 import React from "react";
 import { getAllRooms } from "../../../lib/data /data";
 import Wrapper from "../../../components/shared/Wrapper";
-import AllRoomsWrapper from "../../../sections/Rooms/AllRoomsWrapper";
+import AllRoomsSection from "../../../sections/Rooms/AllRoomsSection";
 export const metadata = {
   title: "Available Rooms - StudyNook",
 };
@@ -17,7 +17,7 @@ const Rooms = async ({ searchParams }) => {
   return (
     <div>
       <Wrapper>
-        <AllRoomsWrapper allRooms={allRooms}></AllRoomsWrapper>
+        <AllRoomsSection allRooms={allRooms}></AllRoomsSection>
       </Wrapper>
     </div>
   );

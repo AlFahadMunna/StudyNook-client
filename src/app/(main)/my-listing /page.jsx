@@ -1,6 +1,6 @@
 import React from "react";
 // import { getListingRooms } from "../../../lib/data/data";
-import MyListingWrapper from "../../../sections/Rooms/MyListingWrapper";
+import MyListingSection from "../../../sections/Rooms/MyListingSection";
 import { auth } from "../../../lib/auth/auth";
 import { headers } from "next/headers";
 export const metadata = {
@@ -32,7 +32,7 @@ const MyListing = async () => {
 
   return (
     <div>
-      <MyListingWrapper rooms={rooms}></MyListingWrapper>
+      <MyListingSection rooms={rooms}></MyListingSection>
     </div>
   );
 };

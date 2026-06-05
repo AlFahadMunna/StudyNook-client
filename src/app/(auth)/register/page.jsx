@@ -1,5 +1,5 @@
 import React from "react";
-import RegisterWrapper from "../../../components/auth/RegisterWrapper";
+import RegisterForm from "../../../components/auth/RegisterForm";
 
 export const metadata = {
   title: "Register - StudyNook",
@@ -7,7 +7,7 @@ export const metadata = {
 const Register = () => {
   return (
     <div>
-      <RegisterWrapper></RegisterWrapper>
+      <RegisterForm></RegisterForm>
     </div>
   );
 };
