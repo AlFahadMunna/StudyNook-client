@@ -13,7 +13,7 @@ A modern, responsive Next.js application for booking library study rooms. Built 
 
 ## 🌐 Live Demo
 
-**Live Site:** [https://study-nook-client-mdalfahad.vercel.app/](https://study-nook-client-mdalfahad.vercel.app/)  
+**Live Site:** [https://study-nook-client-sigma-nine.vercel.app](https://study-nook-client-sigma-nine.vercel.app)  
 **GitHub Repository:** [https://github.com/AlFahadMunna/StudyNook-client](https://github.com/AlFahadMunna/StudyNook-client)
 
 ### Home Page
